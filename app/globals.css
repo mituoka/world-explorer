@@ -56,3 +56,45 @@ html { scroll-behavior: smooth; }
   flex-shrink: 0;
   background: var(--col-border);
 }
+
+/* Markdown document styles */
+.prose-doc { color: var(--text-muted); line-height: 1.9; font-size: 0.9375rem; }
+.prose-doc h1 { color: var(--text-primary); font-size: 1.5rem; font-weight: 700; margin: 2rem 0 0.75rem; letter-spacing: -0.02em; }
+.prose-doc h2 { color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 1.75rem 0 0.6rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--col-border); }
+.prose-doc h3 { color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 1.25rem 0 0.4rem; }
+.prose-doc p { margin: 0.75rem 0; }
+.prose-doc ul, .prose-doc ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.prose-doc li { margin: 0.35rem 0; }
+.prose-doc ol li { list-style: decimal; }
+.prose-doc ul li { list-style: disc; }
+.prose-doc blockquote {
+  border-left: 3px solid var(--accent, #38bdf8);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: rgba(255,255,255,0.03);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--text-primary);
+  font-style: normal;
+}
+.prose-doc strong { color: var(--text-primary); font-weight: 600; }
+.prose-doc code {
+  background: rgba(255,255,255,0.07);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: var(--accent, #38bdf8);
+}
+.prose-doc hr { border: none; border-top: 1px solid var(--col-border); margin: 2rem 0; }
+.prose-doc table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; }
+.prose-doc th { color: var(--text-primary); font-weight: 600; padding: 0.5rem 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.12); text-align: left; }
+.prose-doc td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--col-border); }
+.prose-doc a { color: var(--accent, #38bdf8); text-decoration: underline; text-underline-offset: 2px; }
+
+/* SNS panel — compact variant */
+.prose-sns { font-size: 0.8125rem; }
+.prose-sns h1 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+.prose-sns h2 { font-size: 0.9rem; margin: 1.25rem 0 0.5rem; padding-bottom: 0.3rem; }
+.prose-sns h3 { font-size: 0.825rem; margin: 1rem 0 0.3rem; }
+.prose-sns p { margin: 0.5rem 0; }
+.prose-sns ul, .prose-sns ol { padding-left: 1.25rem; margin: 0.5rem 0; }
+.prose-sns blockquote { padding: 0.6rem 0.85rem; margin: 0.75rem 0; font-size: 0.8rem; }
